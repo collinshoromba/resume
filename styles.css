@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header, main, footer {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/****header***/
+
+header {
+    margin-top: 1rem;
+}
+
+header h1 {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+header .contact {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+header .summary {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/***experience****/
+
+.experience h2 {
+    background-color: black;
+    color: white;
+}
+
+
+.work {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.work-t {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.experience ul {
+    margin-bottom: 1.5rem;
+}
+
+.it {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/****education****/
+
+.education h2 {
+    background-color: black;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+
+
+@media (max-width: 650px) {
+    header .contact {
+        text-align: center;
+        padding: 1rem;
+        font-size: 10px;
+    }
+
+    header .summary {
+        text-align: center;
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .experience h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .work {
+        display: block;
+        padding-left: 1rem;
+    }
+
+    .work-t {
+        display: block;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .education h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+    
