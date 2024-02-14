@@ -1,6 +1,15 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html {
+    border: 2px solid black;
+    border-radius: 2rem;
+    margin: 2rem;
 }
 
 header, main, footer {
@@ -22,18 +31,28 @@ header h1 {
 header .contact {
     text-align: center;
     border-bottom: 1px solid black;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.contact a {
+    color: steelblue;
 }
 
 header .summary {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+    padding-left: 1rem;
+    line-height: 1.8;
 }
+
 
 /***experience****/
 
 .experience h2 {
     background-color: black;
     color: white;
+    padding: 1rem;
 }
 
 
@@ -41,14 +60,29 @@ header .summary {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+    padding-right: 1rem;
 }
 
 .work-t {
     margin-top: 0;
     display: flex;
     justify-content: space-between;
-    
+    padding-left: 1rem;
 }
+
+
+
+/*.work p {
+    padding-left: 1rem;
+}
+
+.work-t p {
+    padding-right: 1rem;
+}
+
+.co-lo {
+    padding-right: 1rem;
+}*/
 
 .experience ul {
     margin-bottom: 1.5rem;
@@ -57,6 +91,7 @@ header .summary {
 .it {
     display: flex;
     justify-content: space-between;
+    padding-left: 1rem;
     
 }
 
@@ -66,8 +101,64 @@ header .summary {
     background-color: black;
     color: white;
     margin-bottom: 1rem;
+    padding: 1rem;
 }
 
+.education p {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    line-height: 1.9;
+}
+
+/**technical**/
+
+.technical h2 {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.technical p {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.projects h2 {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.projects .para {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+} 
+
+.skills h2 {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid black;
+}
+
+footer p {
+    padding: 1rem;
+    text-align: center;
+}
 
 
 @media (max-width: 650px) {
@@ -103,6 +194,39 @@ header .summary {
     .education h2 {
         font-size: 16px;
         text-align: center;
+    }
+
+    .education p {
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .technical h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .technical p {
+        text-align: center;
+    }
+
+    .projects h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .it {
+        display: block;
+    }
+
+    .skills h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .contact a {
+        break-inside: none;
     }
 }
     
